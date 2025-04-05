@@ -3,41 +3,48 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
-const History = () => {
+import axios from 'axios';
+
+const WeatherHistory = () => {
+  const [history, setHistory] = useState([]);
+
+  useEffect(() => {
+    fetchWeatherHistory();
+  }, []);
+
+  const fetchWeatherHistory = async () => {
+    try {
+      const response = await axios.get("http://localhost:8000/weather-history/");
+      setHistory(response.data);
+    } catch (error) {
+      console.error("Error fetching weather history:", error);
+    }
+  };
+
 
   return (
     <div className="container mt-3">
       <div class="container mt-4">
         <h2 class="text-center">Weather Search Report</h2>
         <table class="table table-striped table-bordered">
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>City</th>
-                    <th>Temperature (°C)</th>
-                    <th>Condition</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Nairobi</td>
-                    <td>24°C</td>
-                    <td>Sunny</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>New York</td>
-                    <td>10°C</td>
-                    <td>Cloudy</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>London</td>
-                    <td>15°C</td>
-                    <td>Rainy</td>
-                </tr>
-            </tbody>
+        <thead className="table-light">
+          <tr>
+            <th>City</th>
+            <th>Weather</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {history.map((entry, index) => (
+            <tr key={index}>
+              <td>{entry.city}</td>
+              <td>{entry.weather}</td>
+              <td>{entry.temperature}</td>
+              <td>{entry.humidity}</td>
+            </tr>
+          ))}
+        </tbody>
         </table>
     </div>
 
@@ -46,4 +53,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default WeatherHistory;

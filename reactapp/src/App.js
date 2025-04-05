@@ -1,7 +1,7 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import History from "./History";
+import WeatherHistory from "./History";
 import './App.css';
 import Weather from './Weather'
 import Forecast from './Forecast'
@@ -27,7 +27,7 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<Weather />} />
-          <Route path="/history" element={<History />} />
+          <Route path="/history" element={<WeatherHistory />} />
           <Route path="/forecast" element={<Forecast />} />
         </Routes>
         </Router>

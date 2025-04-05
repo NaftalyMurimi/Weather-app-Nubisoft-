@@ -29,8 +29,10 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# corsheaers allow the react localhost 3000 to share date with django backend localhost 8000
 INSTALLED_APPS = [
+    'corsheaders',
+    'rest_framework',
     'search_store',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +43,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,4 +133,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Enable static files from react app
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, "reactapp/build/static"),
+]
+
+
+
+#allow react app to send data 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
 ]
