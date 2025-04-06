@@ -46,17 +46,11 @@ npm / yarn
 Git
 
 Clone the Repository
-bash
-Copy
-Edit
 git clone https://github.com/NaftalyMurimi/Weather-app-Nubisoft-.git
 cd weatherapp
 2. ⚙️ Backend Setup (Django)
 
 pip install -r requirements.txt
-Create a .env file with your API key:
-
-env
 
 WEATHER_API_KEY=your_api_key_here
 Run the server:
@@ -67,7 +61,9 @@ The backend will run at: http://localhost:8000
 3. 🌐 Frontend Setup (React)
 
 npm install
+
 npm run build
+
 Start the React development server:
 
 npm start
