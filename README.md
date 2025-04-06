@@ -25,7 +25,7 @@ Version Control: The project is versioned with Git and commits reflect feature-b
 
 
 
-📌 Frontend
+# 📌 Frontend
 Modern Technologies: React (with Bootstrap) is used to build the responsive UI.
 
 Responsive Design: Works on desktop and mobile screens.
@@ -38,12 +38,37 @@ Hosted: Bonus — [App is hosted on GitHub Pages / Vercel] (optional, add your l
 
 Version Control: Frontend code is also tracked and structured via Git.
 
-🚀 Step-by-Step Installation Guide
+# 🚀 Step-by-Step Installation Guide
 🧰 Prerequisites
 Python 3.8+
-
 Node.js 14+
-
 npm / yarn
-
 Git
+
+Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/NaftalyMurimi/Weather-app-Nubisoft-.git
+cd weatherapp
+2. ⚙️ Backend Setup (Django)
+
+pip install -r requirements.txt
+Create a .env file with your API key:
+
+env
+
+WEATHER_API_KEY=your_api_key_here
+Run the server:
+python manage.py migrate
+python manage.py runserver
+The backend will run at: http://localhost:8000
+
+3. 🌐 Frontend Setup (React)
+
+npm install
+npm run build
+Start the React development server:
+
+npm start
+The frontend will run at: http://localhost:3000

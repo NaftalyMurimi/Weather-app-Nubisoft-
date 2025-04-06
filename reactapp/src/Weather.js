@@ -17,8 +17,11 @@ const WeatherApp = () => {
   }, []);
 
   const fetchWeather = async () => {
-    const api_key = "ef48ca769b35424994681321250504"; // Replace with your actual key
+    
+
+    const api_key = process.env.REACT_APP_WEATHER_API_KEY; // Replace with your actual key
     const url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}&aqi=no`;
+    console.log("API KEY:", api_key); 
 
     try {
       const response = await fetch(url);

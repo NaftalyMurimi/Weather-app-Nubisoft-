@@ -141,3 +141,11 @@ STATICFILES_DIRS =[
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+
+# # import and register the api key here 
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()
+
+# WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")

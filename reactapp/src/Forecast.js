@@ -8,7 +8,7 @@ const ForecastApp = () => {
   const [forecast, setForecast] = useState([]);
   const [error, setError] = useState(null);
 
-  const API_KEY = "ef48ca769b35424994681321250504"; // Replace with your WeatherAPI key
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;// Replace with your WeatherAPI key
 
   const fetchForecast = async () => {
     if (!city || days < 1 || days > 10) {
