@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Weather-app-Nubisoft-/static/css/main.4c636e1f.css",
+    "main.js": "/Weather-app-Nubisoft-/static/js/main.1970aa46.js",
+    "static/js/453.785134cd.chunk.js": "/Weather-app-Nubisoft-/static/js/453.785134cd.chunk.js",
+    "index.html": "/Weather-app-Nubisoft-/index.html",
+    "main.4c636e1f.css.map": "/Weather-app-Nubisoft-/static/css/main.4c636e1f.css.map",
+    "main.1970aa46.js.map": "/Weather-app-Nubisoft-/static/js/main.1970aa46.js.map",
+    "453.785134cd.chunk.js.map": "/Weather-app-Nubisoft-/static/js/453.785134cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c636e1f.css",
+    "static/js/main.1970aa46.js"
+  ]
+}
