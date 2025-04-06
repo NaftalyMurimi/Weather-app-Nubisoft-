@@ -53,11 +53,8 @@ const WeatherApp = () => {
       <h2 className="text-center">Weather App</h2>
 
       <div className="card-body row">
-        <div className="col-4 text-center">
-          <img src="/static/Weatherman.png" className="img-fluid" alt="Weatherman" />
-        </div>
-
-        <div className="col-8 bg-light p-3">
+        
+        <div className="col-12 bg-light p-3">
           <h3 className="text-center">Type the city name to get the Weather updates</h3>
 
           <div className="input-group mb-3 justify-content-center">
@@ -82,9 +79,9 @@ const WeatherApp = () => {
               <div className="col-md-4">
                 <div className="card shadow">
                   <div className="card-body">
-                    <img src="/static/weather-icon.png" className="img-fluid mb-2" alt="Weather" />
+                    {/* <img src="/static/weather-icon.png" className="img-fluid mb-2" alt="Weather" /> */}
                     <p>Condition</p>
-                    <h5>{weather.condition}</h5>
+                    <h5>{weather.weather}</h5>
                   </div>
                 </div>
               </div>
@@ -92,7 +89,7 @@ const WeatherApp = () => {
               <div className="col-md-4">
                 <div className="card shadow">
                   <div className="card-body">
-                    <img src="/static/temp-icon.png" className="img-fluid mb-2" alt="Temperature" />
+                    {/* <img src="/static/temp-icon.png" className="img-fluid mb-2" alt="Temperature" /> */}
                     <p>Temperature</p>
                     <h5>{weather.temperature}°C</h5>
                   </div>
@@ -102,22 +99,14 @@ const WeatherApp = () => {
               <div className="col-md-4">
                 <div className="card shadow">
                   <div className="card-body">
-                    <img src="/static/position-icon.png" className="img-fluid mb-2" alt="Humidity" />
+                    {/* <img src="/static/position-icon.png" className="img-fluid mb-2" alt="Humidity" /> */}
                     <p>Humidity</p>
                     <h5>{weather.humidity}%</h5>
                   </div>
                 </div>
               </div>
 
-              {/* Optional: show coordinates */}
-              <div className="col-md-6 mx-auto mt-3">
-                <div className="card shadow">
-                  <div className="card-body">
-                    <p>Coordinates</p>
-                    <h6>Lat: {weather.lat}, Lon: {weather.lon}</h6>
-                  </div>
-                </div>
-              </div>
+           
             </div>
           )}
         </div>
