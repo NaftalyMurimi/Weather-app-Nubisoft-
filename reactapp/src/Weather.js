@@ -83,7 +83,7 @@ const WeatherApp = () => {
                 <div className="card shadow">
                   <div className="card-body">
                     {/* <img src="/static/weather-icon.png" className="img-fluid mb-2" alt="Weather" /> */}
-                    <p>Condition</p>
+                    <p>Weather</p>
                     <h5>{weather.weather}</h5>
                   </div>
                 </div>
