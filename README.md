@@ -32,9 +32,7 @@ Responsive Design: Works on desktop and mobile screens.
 
 Current & Forecast Data: User can view current and forecast weather for Gliwice and Hamburg, and also search custom cities.
 
-Interactive Features: Includes date picker, error handling, and weather cards.
-
-Hosted: Bonus — [App is hosted on GitHub Pages / Vercel] (optional, add your link here).
+Interactive Features: Includes selections on the number of days, error handling, and weather cards.
 
 Version Control: Frontend code is also tracked and structured via Git.
 
