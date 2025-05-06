@@ -8,4 +8,4 @@ class WeatherSearch(models.Model):
     searched_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.city} - {self.weather} on {self.searched_at.strftime('%Y-%m-%d %H:%M:%S')}"
+        return f"{self.city} - {self.weather} on {self.searched_at.strftime('%A, %B %d, %Y at %I:%M %p')}"

@@ -64,7 +64,7 @@ const WeatherApp = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="City e.g., Nairobi"
+              placeholder="City e.g., Gliwice"
               value={city}
               onChange={(e) => setCity(e.target.value)}
             />

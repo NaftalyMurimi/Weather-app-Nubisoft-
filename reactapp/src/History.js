@@ -33,7 +33,7 @@ const WeatherHistory = () => {
             <th>Weather</th>
             <th>Temperature (°C)</th>
             <th>Humidity (%)</th>
-            <th>Date & Time</th>
+            {/* <th>Date & Time</th> */}
           </tr>
         </thead>
         <tbody>
@@ -43,7 +43,7 @@ const WeatherHistory = () => {
               <td>{entry.weather}</td>
               <td>{entry.temperature}</td>
               <td>{entry.humidity}</td>
-              <td>{entry.searched_at}</td>
+              {/* <td>{entry.searched_at}</td> */}
             </tr>
           ))}
         </tbody>
